@@ -11,7 +11,7 @@ export default hopeTheme({
     url: "https://lance.fun",
   },
 
-  logo: "",
+  logo: "https://theme-hope-assets.vuejs.press/logo.svg",
 
   repo: "cnlancehu/solo",
 
