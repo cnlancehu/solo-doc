@@ -9,9 +9,4 @@ export const enNavbar = navbar([
     children: [
     ],
   },
-  {
-    text: "V2 Docs",
-    icon: "book",
-    link: "https://theme-hope.vuejs.press/",
-  },
 ]);
