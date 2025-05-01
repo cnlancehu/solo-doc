@@ -82,7 +82,6 @@ export default hopeTheme({
       prefix: "fa-regular fa-",
       assets: [
         "/assets/fa.css",
-        "/assets/fa-type.css",
       ],
     },
   },

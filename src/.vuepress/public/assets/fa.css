@@ -99,10 +99,8 @@
     font-family: "Font Awesome 6 Duotone"
 }
 
-.fa-duotone,
 .fa-sharp,
 .fa-sharp-duotone,
-.fad,
 .fasds,
 .fass {
     font-weight: 900
@@ -18142,6 +18140,20 @@
     border-width: 0
 }
 
+:host,
+:root {
+    --fa-style-family-brands: "Font Awesome 6 Brands";
+    --fa-font-brands: normal 400 1em/1 "Font Awesome 6 Brands"
+}
+
+@font-face {
+    font-family: "Font Awesome 6 Brands";
+    font-style: normal;
+    font-weight: 400;
+    font-display: block;
+    src: url(/assets/fa-brands-400.woff2) format("woff2"), url(/assets/fa-brands-400.ttf) format("truetype")
+}
+
 .fa-brands,
 .fab {
     font-weight: 400
@@ -20160,4 +20172,22 @@
 
 .fa-steam-symbol {
     --fa: "\f3f6"
+}
+
+:host,
+:root {
+    --fa-font-regular: normal 400 1em/1 "Font Awesome 6 Pro"
+}
+
+@font-face {
+    font-family: "Font Awesome 6 Pro";
+    font-style: normal;
+    font-weight: 400;
+    font-display: block;
+    src: url(/assets/fa-regular-400.woff2) format("woff2"), url(/assets/fa-regular-400.ttf) format("truetype")
+}
+
+.fa-regular,
+.far {
+    font-weight: 400
 }
