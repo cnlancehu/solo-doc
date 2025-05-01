@@ -12,6 +12,7 @@ actions:
     type: primary
 
   - text: Download
+    icon: download
     link: ./download/
 
 highlights:
@@ -22,10 +23,8 @@ highlights:
         icon: /assets/providers/qcloud.svg
         details: VPC, Lighthouse
         link: 
-      - title: Alibaba Cloud
+      - title: Aliyun
         icon: /assets/providers/aliyun.svg
         details: ECS，Swas
         link: 
-
-copyright: false
 ---

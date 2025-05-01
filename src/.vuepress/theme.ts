@@ -11,6 +11,8 @@ export default hopeTheme({
     url: "https://lance.fun",
   },
 
+  copyright: false,
+
   logo: "https://theme-hope-assets.vuejs.press/logo.svg",
 
   repo: "cnlancehu/solo",
@@ -20,34 +22,24 @@ export default hopeTheme({
   locales: {
     "/": {
       navbar: enNavbar,
-
       sidebar: enSidebar,
-
       footer: "© 2025 Lance. CC-BY / MIT",
-
       displayFooter: true,
-
       metaLocales: {
         editLink: "Edit this page on GitHub",
       },
     },
-
     "/zh/": {
       navbar: zhNavbar,
-
       sidebar: zhSidebar,
-
       footer: "© 2025 Lance. CC-BY / MIT",
-
       displayFooter: true,
-
       metaLocales: {
         editLink: "在 GitHub 上编辑此页",
       },
     },
   },
 
-  // These features are enabled for demo, only preserve features you need here
   markdown: {
     align: true,
     attrs: true,
@@ -86,9 +78,12 @@ export default hopeTheme({
     components: {
       components: ["Badge", "VPCard"],
     },
-
     icon: {
-      prefix: "fa6-solid:",
+      prefix: "fa-regular fa-",
+      assets: [
+        "/assets/fa.css",
+        "/assets/fa-regular.css",
+      ],
     },
   },
 });

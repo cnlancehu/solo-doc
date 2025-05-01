@@ -12,6 +12,7 @@ actions:
     type: primary
 
   - text: 下载
+    icon: download
     link: ./download/
 
 highlights:
@@ -26,6 +27,4 @@ highlights:
         icon: /assets/providers/aliyun.svg
         details: 云服务器，轻量应用服务器
         link: 
-
-copyright: false
 ---

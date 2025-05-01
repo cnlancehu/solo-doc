@@ -13,10 +13,10 @@ pnpm i
 
 启动开发服务器
 ```bash
-pnpm docs:dev
+pnpm dev
 ```
 
 构建静态页面
 ```bash
-pnpm docs:build
+pnpm build
 ```
