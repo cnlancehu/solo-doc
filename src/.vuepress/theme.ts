@@ -19,6 +19,8 @@ export default hopeTheme({
 
   docsDir: "src",
 
+  pageInfo: ["Author", "ReadingTime", "Category", "Tag"],
+
   locales: {
     "/": {
       navbar: enNavbar,

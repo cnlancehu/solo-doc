@@ -17,14 +17,13 @@ actions:
 
 highlights:
   - header: Support multiple cloud service providers
-    description: Support port protection of cloud service providers such as Tencent Cloud and Alibaba Cloud
     features:
       - title: Tencent Cloud
         icon: /assets/providers/qcloud.svg
-        details: VPC, Lighthouse
+        details: <strong>CVM</strong> Cloud Virtual Machine<br><strong>Lighthouse</strong>
         link: 
       - title: Aliyun
         icon: /assets/providers/aliyun.svg
-        details: ECS，Swas
+        details: <strong>ECS</strong> Elastic Compute Service<br><strong>SAS</strong> Simple Application Server
         link: 
 ---

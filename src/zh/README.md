@@ -21,10 +21,10 @@ highlights:
     features:
       - title: 腾讯云
         icon: /assets/providers/qcloud.svg
-        details: 云服务器，轻量应用服务器
+        details: <strong>CVM</strong> 云服务器<br><strong>Lighthouse</strong> 轻量应用服务器
         link: 
       - title: 阿里云
         icon: /assets/providers/aliyun.svg
-        details: 云服务器，轻量应用服务器
+        details: <strong>ECS</strong> 云服务器<br><strong>SAS</strong> 轻量应用服务器
         link: 
 ---
