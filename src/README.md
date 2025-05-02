@@ -4,7 +4,7 @@ icon: house
 title: Hub
 heroImage: https://theme-hope-assets.vuejs.press/logo.svg
 heroText: Solo
-tagline: A lightweight tool that dynamically secures server ports
+tagline: A lightweight tool to protect/hide server ports
 actions:
   - text: Guide
     icon: lightbulb
