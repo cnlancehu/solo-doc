@@ -26,7 +26,7 @@ export default hopeTheme({
       footer: "© 2025 Lance. CC-BY / MIT",
       displayFooter: true,
       metaLocales: {
-        editLink: "Edit this page on GitHub",
+        editLink: "Edit this page",
       },
     },
     "/zh/": {
@@ -35,7 +35,7 @@ export default hopeTheme({
       footer: "© 2025 Lance. CC-BY / MIT",
       displayFooter: true,
       metaLocales: {
-        editLink: "在 GitHub 上编辑此页",
+        editLink: "编辑此页",
       },
     },
   },

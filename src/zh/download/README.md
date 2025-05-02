@@ -1,5 +1,6 @@
 ---
 title: 下载
+icon: download
 
 breadcrumb: false
 pageInfo: false

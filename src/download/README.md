@@ -1,5 +1,6 @@
 ---
 title: Download
+icon: download
 
 breadcrumb: false
 pageInfo: false
