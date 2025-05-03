@@ -23,6 +23,9 @@
     ]
   },
   "dependencies": {
-    "@vuepress/plugin-slimsearch": "2.0.0-rc.61"
+    "@vuepress/plugin-meilisearch": "2.0.0-rc.95",
+    "cheerio": "^1.0.0",
+    "domhandler": "^5.0.3",
+    "meilisearch": "^0.50.0"
   }
 }

@@ -1,5 +1,5 @@
 import { defineUserConfig } from "vuepress";
-
+import meilisearchPlugin from '../../index/search.js';
 import theme from "./theme.js";
 
 export default defineUserConfig({
@@ -17,6 +17,15 @@ export default defineUserConfig({
       description: "",
     },
   },
+
+  plugins: [
+    meilisearchPlugin({
+      outputFile: 'meilisearch-index.json',
+      indexContent: true,
+      baseUrl: 'https://solo.lance.fun',
+      filter: (page) => page.path !== '/404.html' && page.path !== '/404',
+    }),
+  ],
 
   theme,
 });
