@@ -1,5 +1,5 @@
 import { defineUserConfig } from "vuepress";
-import meilisearchPlugin from '../../index/search.js';
+import meilisearchIndexerPlugin from "vuepress-plugin-meilisearch-indexer";
 import theme from "./theme.js";
 
 export default defineUserConfig({
@@ -19,11 +19,17 @@ export default defineUserConfig({
   },
 
   plugins: [
-    meilisearchPlugin({
-      outputFile: 'meilisearch-index.json',
+    meilisearchIndexerPlugin({
       indexContent: true,
-      baseUrl: 'https://solo.lance.fun',
+      baseUrl: '',
       filter: (page) => page.path !== '/404.html' && page.path !== '/404',
+      deploy: {
+        trigger: "deploy = true",
+
+        host: "https://search.lance.fun/",
+        index_uid: "solo-doc",
+        type: "full",
+      }
     }),
   ],
 

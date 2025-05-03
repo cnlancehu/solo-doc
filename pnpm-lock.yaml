@@ -7,23 +7,13 @@ settings:
 importers:
 
   .:
-    dependencies:
-      '@vuepress/plugin-meilisearch':
-        specifier: 2.0.0-rc.95
-        version: 2.0.0-rc.95(vuepress@2.0.0-rc.22(@vuepress/bundler-vite@2.0.0-rc.22(@types/node@22.15.3)(sass-embedded@1.87.0))(vue@3.5.13))
-      cheerio:
-        specifier: ^1.0.0
-        version: 1.0.0
-      domhandler:
-        specifier: ^5.0.3
-        version: 5.0.3
-      meilisearch:
-        specifier: ^0.50.0
-        version: 0.50.0
     devDependencies:
       '@vuepress/bundler-vite':
         specifier: 2.0.0-rc.22
         version: 2.0.0-rc.22(@types/node@22.15.3)(sass-embedded@1.87.0)
+      '@vuepress/plugin-meilisearch':
+        specifier: 2.0.0-rc.95
+        version: 2.0.0-rc.95(vuepress@2.0.0-rc.22(@vuepress/bundler-vite@2.0.0-rc.22(@types/node@22.15.3)(sass-embedded@1.87.0))(vue@3.5.13))
       sass-embedded:
         specifier: ^1.87.0
         version: 1.87.0
@@ -33,6 +23,9 @@ importers:
       vuepress:
         specifier: 2.0.0-rc.22
         version: 2.0.0-rc.22(@vuepress/bundler-vite@2.0.0-rc.22(@types/node@22.15.3)(sass-embedded@1.87.0))(vue@3.5.13)
+      vuepress-plugin-meilisearch-indexer:
+        specifier: ../plugin-meilisearch-indexer
+        version: link:../plugin-meilisearch-indexer
       vuepress-theme-hope:
         specifier: 2.0.0-rc.84
         version: 2.0.0-rc.84(@vuepress/plugin-meilisearch@2.0.0-rc.95(vuepress@2.0.0-rc.22(@vuepress/bundler-vite@2.0.0-rc.22(@types/node@22.15.3)(sass-embedded@1.87.0))(vue@3.5.13)))(markdown-it@14.1.0)(sass-embedded@1.87.0)(vuepress@2.0.0-rc.22(@vuepress/bundler-vite@2.0.0-rc.22(@types/node@22.15.3)(sass-embedded@1.87.0))(vue@3.5.13))
@@ -1449,9 +1442,6 @@ packages:
 
   meilisearch@0.49.0:
     resolution: {integrity: sha512-oMJ/e6Or6cz2+owcEKeB11p2OWiWW9NmssqOZC/KIwQB0sBGKLJ7RCpYzf+GhUIZIZ9FRYZ419ox3RGebVQX5g==}
-
-  meilisearch@0.50.0:
-    resolution: {integrity: sha512-9IzIkobvnuS18Eg4dq/eJB9W+eXqeLZjNRgq/kKMswSmVYYSQsXqGgSuCA0JkF+o5RwJlwIsieQee6rh313VhA==}
 
   merge2@1.4.1:
     resolution: {integrity: sha512-8q7VEgMJW4J8tcfVPy8g09NcQwZdbwFEqhe/WZkoIzjn/3TGDwtOCYtXGxA3O8tPzpczCCDgv+P2P5y00ZJOOg==}
@@ -3818,8 +3808,6 @@ snapshots:
       solid-js: 1.9.5
 
   meilisearch@0.49.0: {}
-
-  meilisearch@0.50.0: {}
 
   merge2@1.4.1: {}
 
