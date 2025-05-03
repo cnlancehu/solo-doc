@@ -21,5 +21,8 @@
     "onlyBuiltDependencies": [
       "esbuild"
     ]
+  },
+  "dependencies": {
+    "@vuepress/plugin-slimsearch": "2.0.0-rc.61"
   }
 }

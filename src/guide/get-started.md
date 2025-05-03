@@ -22,7 +22,7 @@ please contact us by [submitting an Issue](https://github.com/cnlancehu/solo/iss
 :::
 
 ## Download
-Go to the [download page](/download) to get the version suitable for your device.
+Go to the [download page](../download/README.md) to get the version suitable for your device.
 
 ::: tip Solo supports Android?!
 Yes, Solo supports Android devices, but only at a very basic level.

@@ -86,5 +86,13 @@ export default hopeTheme({
         "/assets/fa.css",
       ],
     },
+    // meilisearch: {
+    //   host: "https://search.lance.fun/",
+    //   indexUid: "solo-doc",
+    //   apiKey: "e3e4c9d938117d2882847902db5434a5bdee4e44bf5c7a3bf5c657d4dc9e5804"
+    // }
+    slimsearch: {
+      indexContent: true,
+    }
   },
 });
