@@ -57,3 +57,10 @@ Solo's port protection process mainly includes the following steps:
 
 3. **Automatically Update Rules**  
    If an IP change is detected, Solo automatically uses the cloud provider's API to update the Cidr Block of the relevant rules in real time.
+
+```component VPBanner
+title: <i class="fa-regular fa-star-shooting"></i> Next<br>Start Using Solo
+actions:
+  - text: Get Started
+    link: ./get-started.md
+```

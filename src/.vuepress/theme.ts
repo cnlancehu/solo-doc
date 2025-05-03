@@ -78,7 +78,7 @@ export default hopeTheme({
 
   plugins: {
     components: {
-      components: ["Badge", "VPCard"],
+      components: ["Badge", "VPCard", "VPBanner"],
     },
     icon: {
       prefix: "fa-regular fa-",
@@ -93,6 +93,7 @@ export default hopeTheme({
     // }
     slimsearch: {
       indexContent: true,
+      autoSuggestions: false,
     }
   },
 });

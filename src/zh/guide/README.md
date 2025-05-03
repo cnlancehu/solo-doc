@@ -58,3 +58,10 @@ Solo 实现端口保护的流程主要包括以下几个步骤：
 
 3. **自动更新规则**  
     如果检测到 IP 变更，自动调用云服务商的 API，实时更新相应规则的 Cidr Block。
+
+```component VPBanner
+title: <i class="fa-regular fa-star-shooting"></i> 下一步<br>开始使用 Solo
+actions:
+  - text: 快速上手
+    link: ./get-started.md
+```
