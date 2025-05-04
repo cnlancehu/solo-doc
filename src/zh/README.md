@@ -5,6 +5,12 @@ title: 主页
 heroImage: https://theme-hope-assets.vuejs.press/logo.svg
 heroText: Solo
 tagline: 一个保护 / 隐藏服务器端口的轻量级工具
+
+head:
+  - - meta
+    - name: og:description
+      content: Solo - 一个保护 / 隐藏服务器端口的轻量级工具
+
 actions:
   - text: 使用指南
     icon: lightbulb
