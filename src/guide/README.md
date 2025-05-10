@@ -8,6 +8,8 @@ next: ./get-started.md
 ## Introduction
 Solo is a lightweight port protection tool.
 
+With Solo, you can make important ports open only to you, thus achieving the effect of hiding ports.
+
 ### Principle
 
 By leveraging **the firewall feature provided by cloud service providers**, Solo protects ports by modifying the **Cidr Block** in firewall rules.
@@ -27,7 +29,7 @@ So, if you dynamically update the **Cidr Block** of the firewall rule for a crit
 you can effectively make that port accessible **only to yourself**.
 
 ### Let's Try It
-On your server’s firewall, modify the **Cidr Block** of the rule that allows access to critical ports to your own IP address.
+You can manually modify the **Cidr Block** in your server's firewall to allow important ports only for your IP address.
 
 Assume your IP is `8.8.8.8`, then the rule for allowing SSH (port 22) should look like this:
 
