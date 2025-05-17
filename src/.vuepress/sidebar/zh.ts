@@ -1,8 +1,25 @@
 import { sidebar } from "vuepress-theme-hope";
 
 export const zhSidebar = sidebar({
-  "/zh/guide": [
+  "/zh/guide/": [
     "get-started",
-    "config",
+    {
+      text: "配置文件",
+      icon: "sliders-up",
+      prefix: "config/",
+      children: [
+        "new",
+        "edit",
+        {
+          text: "服务器",
+          icon: "server",
+          prefix: "server/",
+          children: [
+            "aliyunswas",
+            "qcloudlh"
+          ]
+        }
+      ]
+    }
   ]
 });

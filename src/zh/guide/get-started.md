@@ -3,7 +3,7 @@ title: 快速上手
 icon: play
 
 prev: ./README.md
-next: ./config.md
+next: ./config/new.md
 ---
 
 ## 先决条件
