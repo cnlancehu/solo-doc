@@ -20,4 +20,13 @@ toc: false
 import Download from "@source/components/Download.vue";
 </script>
 
+::: info Note
+The Android version of Solo available for download **is not an apk — it's still a command-line program**.
+
+See [**<VPIcon
+    icon="lightbulb"
+    verticalAlign="middle"
+/> Guide**](../guide/get-started.md#download)
+:::
+
 <Download />

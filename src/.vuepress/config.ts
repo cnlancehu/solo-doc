@@ -22,9 +22,8 @@ export default defineUserConfig({
     meilisearchIndexerPlugin({
       indexContent: true,
       baseUrl: '',
-      filter: (page) => page.path !== '/404.html' && page.path !== '/404',
       deploy: {
-        trigger: "deploy = true",
+        trigger: "meilideploy = true",
 
         host: "https://search.lance.fun/",
         index_uid: "solo-doc",

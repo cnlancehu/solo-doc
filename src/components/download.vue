@@ -47,7 +47,7 @@ export default {
                 published: "发布于",
             },
             en: {
-                latest: "Latest Version",
+                latest: "Latest",
                 download: "Download",
                 loading: "Loading...",
                 error: "Error loading data. Please try again later.",
