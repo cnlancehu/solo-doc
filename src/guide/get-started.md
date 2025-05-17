@@ -3,7 +3,7 @@ title: Get Started
 icon: play
 
 prev: ./README.md
-next: ./config.md
+next: ./config/new.md
 ---
 
 ## Prerequisites

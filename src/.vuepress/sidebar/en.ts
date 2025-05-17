@@ -1,8 +1,25 @@
 import { sidebar } from "vuepress-theme-hope";
 
 export const enSidebar = sidebar({
-  "/guide": [
+  "/guide/": [
     "get-started",
-    "config",
+    {
+      text: "Config",
+      icon: "sliders-up",
+      prefix: "config/",
+      children: [
+        "new",
+        "edit",
+        {
+          text: "Server",
+          icon: "server",
+          prefix: "server/",
+          children: [
+            "aliyunswas",
+            "qcloudlh"
+          ]
+        }
+      ]
+    }
   ]
 });
