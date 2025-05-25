@@ -6,11 +6,6 @@ heroImage: https://theme-hope-assets.vuejs.press/logo.svg
 heroText: Solo
 tagline: A lightweight tool to protect / hide server ports
 
-head:
-  - - meta
-    - name: description
-      content: Solo - A lightweight tool to protect/hide server ports
-
 actions:
   - text: Guide
     icon: lightbulb
