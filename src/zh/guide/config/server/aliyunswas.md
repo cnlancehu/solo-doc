@@ -3,6 +3,8 @@ title: 阿里云轻量
 icon: a
 ---
 
+配置阿里云轻量应用服务器。
+
 ## 申请访问密钥
 首先，你需要在 [阿里云控制台](https://ram.console.aliyun.com/profile/access-keys) 申请一个访问密钥。
 

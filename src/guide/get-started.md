@@ -6,6 +6,8 @@ prev: ./README.md
 next: ./config/new.md
 ---
 
+Start using Solo.
+
 ## Prerequisites
 First, make sure that Solo supports your cloud provider.
 

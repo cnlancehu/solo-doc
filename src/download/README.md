@@ -14,6 +14,11 @@ footer: false
 sidebar: false
 
 toc: false
+
+head:
+  - - meta
+    - name: description
+      content: 下载 Solo
 ---
 
 <script setup>

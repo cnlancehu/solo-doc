@@ -81,7 +81,8 @@ export default hopeTheme({
       components: ["Badge", "VPCard", "VPBanner"],
     },
     icon: {
-      prefix: "fa-regular fa-",
+      type: "fontawesome",
+      
       assets: [
         "/assets/fa.css",
       ],

@@ -6,7 +6,8 @@ prev: ../get-started.md
 next: ./edit.md
 ---
 
-通过以下命令新建一个配置文件。
+新建一个 Solo 配置文件。
+
 ::: code-tabs#run
 
 @tab Windows

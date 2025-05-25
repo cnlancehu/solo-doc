@@ -8,7 +8,7 @@ tagline: A lightweight tool to protect / hide server ports
 
 head:
   - - meta
-    - name: og:description
+    - name: description
       content: Solo - A lightweight tool to protect/hide server ports
 
 actions:

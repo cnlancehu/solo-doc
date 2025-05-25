@@ -5,8 +5,7 @@ icon: lightbulb
 next: ./get-started.md
 ---
 
-## 介绍
-Solo 是一款轻量级的端口保护工具。
+Solo，一款轻量级的端口保护工具。
 
 通过 Solo，你可以让重要的端口只对你开放，从而达到隐藏端口的效果。
 

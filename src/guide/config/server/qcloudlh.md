@@ -1,4 +1,4 @@
 ---
-title: Qcloud Lighthouse
+title: TencentCloud Lighthouse
 icon: t
 ---

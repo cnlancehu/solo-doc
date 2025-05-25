@@ -5,8 +5,7 @@ icon: lightbulb
 next: ./get-started.md
 ---
 
-## Introduction
-Solo is a lightweight port protection tool.
+Solo, a lightweight port protection tool.
 
 With Solo, you can make important ports open only to you, thus achieving the effect of hiding ports.
 

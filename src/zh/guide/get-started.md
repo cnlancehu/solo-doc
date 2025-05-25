@@ -6,6 +6,8 @@ prev: ./README.md
 next: ./config/new.md
 ---
 
+开始使用 Solo。
+
 ## 先决条件
 首先，请确定 Solo 支持你的服务商。
 

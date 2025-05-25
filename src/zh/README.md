@@ -8,7 +8,7 @@ tagline: 一个保护 / 隐藏服务器端口的轻量级工具
 
 head:
   - - meta
-    - name: og:description
+    - name: description
       content: Solo - 一个保护 / 隐藏服务器端口的轻量级工具
 
 actions:

@@ -6,7 +6,8 @@ prev: ../get-started.md
 next: ./edit.md
 ---
 
-Use the following command to create a new configuration file.
+Create a new Solo configuration file.
+
 ::: code-tabs#run
 
 @tab Windows

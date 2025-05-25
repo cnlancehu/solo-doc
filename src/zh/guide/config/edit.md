@@ -5,6 +5,8 @@ icon: pen-to-square
 prev: ./new.md
 ---
 
+编辑 Solo 配置文件。
+
 在新建配置文件后，你会得到这样一个文件：
 
 ```toml

@@ -5,6 +5,8 @@ icon: pen-to-square
 prev: ./new.md
 ---
 
+Edit Solo configuration file.
+
 After creating a new configuration file, you will get a file like this:
 
 ```toml
