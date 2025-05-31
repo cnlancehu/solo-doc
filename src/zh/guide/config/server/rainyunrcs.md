@@ -9,13 +9,13 @@ icon: cloud-showers
 1. 前往 [雨云账户设置](https://app.rainyun.com/account/settings/api-key) 页面。
 2. 记录账户的 **API 密钥**（稍后需要用到）。
 
-![API 密钥](/assets/guide/config/server/rainyun-apitoken.webp)
+![API 密钥](/assets/guide/config/server/rainyun/apitoken.webp)
 
 ## 获取服务器 ID
 1. 进入 [云服务器列表](https://app.rainyun.com/apps/rcs/list)。
 2. 在目标服务器的卡片信息中找到 **服务器 ID**。
 
-![服务器 ID](/assets/guide/config/server/rainyun-serverid.webp)
+![服务器 ID](/assets/guide/config/server/rainyun/serverid.webp)
 
 ## 配置防火墙规则
 1. 点击目标服务器卡片标题进入详情页。
@@ -31,7 +31,7 @@ icon: cloud-showers
 
 如下图，若需要保护 `22` (SSH) 和 `3306` (MySQL) 端口，则 Solo 配置中应填写 `ssh` 和 `mysql`：
 
-![防火墙规则](/assets/guide/config/server/rainyun-firewallrules.webp)
+![防火墙规则](/assets/guide/config/server/rainyun/firewallrules.webp)
 
 ::: tip 备注名称可重复使用
 多条规则可使用相同备注名称。Solo 会自动修改所有匹配的规则。

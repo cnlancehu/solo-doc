@@ -9,13 +9,13 @@ Configure Rainyun Cloud Server.
 1. Go to [Rainyun Account Settings](https://app.rainyun.com/account/settings/api-key).
 2. Record your account's **API Key** (will be used later).
 
-![API Key](/assets/guide/config/server/rainyun-apitoken.webp)
+![API Key](/assets/guide/config/server/rainyun/apitoken.webp)
 
 ## Obtain Server ID
 1. Navigate to [Cloud Server List](https://app.rainyun.com/apps/rcs/list).
 2. Find the **Server ID** in the target server's card information.
 
-![Server ID](/assets/guide/config/server/rainyun-serverid.webp)
+![Server ID](/assets/guide/config/server/rainyun/serverid.webp)
 
 ## Configure Firewall Rules
 1. Click the server card title to access details.
@@ -31,7 +31,7 @@ Special configuration required for Rainyun:
 
 As shown below, to protect `22` (SSH) and `3306` (MySQL) ports, configure `ssh` and `mysql` in Solo:
 
-![Firewall Rules](/assets/guide/config/server/rainyun-firewallrules.webp)
+![Firewall Rules](/assets/guide/config/server/rainyun/firewallrules.webp)
 
 ::: tip Duplicate Remarks Allowed
 Multiple rules can share the same remark. Solo will modify all matching rules.

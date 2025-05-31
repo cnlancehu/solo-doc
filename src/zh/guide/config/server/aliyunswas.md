@@ -10,18 +10,18 @@ icon: a
 2. 点击 **创建 AccessKey**。
 3. 记录生成的 **AccessKey ID** 和 **AccessKey Secret**。
 
-![AccessKey](/assets/guide/config/server/aliyun-accesskey.webp)
+![AccessKey](/assets/guide/config/server/aliyun/accesskey.webp)
 
 ## 获取实例 ID 和地域 ID
 1. 进入 [轻量应用服务器控制台](https://swasnext.console.aliyun.com/servers)。
 2. 点击目标服务器卡片标题，进入详情页。
 3. 在 **基本信息** 区域找到 **实例 ID**。
 
-![实例 ID](/assets/guide/config/server/aliyun-instanceid.webp)
+![实例 ID](/assets/guide/config/server/aliyun/instanceid.webp)
 
 4. 查看浏览器地址栏中的服务器概览页面 URL，从中获取 **地域 ID**（例如 `cn-hongkong`）。
 
-![地域 ID](/assets/guide/config/server/aliyun-regionid.webp)
+![地域 ID](/assets/guide/config/server/aliyun/regionid.webp)
 
 ## 配置防火墙规则
 1. 在服务器详情页，点击菜单中的 **防火墙**。
@@ -30,7 +30,7 @@ icon: a
 
 例如，下图需要保护 `22` (SSH) 和 `3306` (MySQL) 端口，则后续配置应填写 `ssh` 和 `mysql`。
 
-![防火墙规则](/assets/guide/config/server/aliyun-firewallrules.webp)
+![防火墙规则](/assets/guide/config/server/aliyun/firewallrules.webp)
 
 ::: tip 备注名称可重复
 多条规则可使用相同备注名称。Solo 会自动识别并修改所有匹配该名称的规则。

@@ -10,18 +10,18 @@ Configure Aliyun Simple Web Application Server (SWAS).
 2. Click **Create AccessKey**.
 3. Record the generated **AccessKey ID** and **AccessKey Secret**.
 
-![AccessKey](/assets/guide/config/server/aliyun-accesskey.webp)
+![AccessKey](/assets/guide/config/server/aliyun/accesskey.webp)
 
 ## Obtain Instance ID and Region ID
 1. Go to [SWAS Management Console](https://swasnext.console.aliyun.com/servers).
 2. Click the target server card title to access details page.
 3. Find **Instance ID** in the **Basic Information** section.
 
-![Instance ID](/assets/guide/config/server/aliyun-instanceid.webp)
+![Instance ID](/assets/guide/config/server/aliyun/instanceid.webp)
 
 4. Check the browser address bar URL to obtain **Region ID** (e.g. `cn-hongkong`).
 
-![Region ID](/assets/guide/config/server/aliyun-regionid.webp)
+![Region ID](/assets/guide/config/server/aliyun/regionid.webp)
 
 ## Configure Firewall Rules
 1. In server details page, select **Firewall** from the menu.
@@ -30,7 +30,7 @@ Configure Aliyun Simple Web Application Server (SWAS).
 
 For example, to protect ports `22` (SSH) and `3306` (MySQL), configure `ssh` and `mysql`:
 
-![Firewall Rules](/assets/guide/config/server/aliyun-firewallrules.webp)
+![Firewall Rules](/assets/guide/config/server/aliyun/firewallrules.webp)
 
 ::: tip Duplicate Remarks Allowed
 Multiple rules can share the same remark. Solo will modify all matching rules.
