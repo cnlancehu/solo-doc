@@ -22,9 +22,10 @@ highlights:
       - title: Tencent Cloud
         icon: /assets/providers/qcloud.svg
         details: <strong>CVM</strong> Cloud Virtual Machine<br><strong>Lighthouse</strong>
-        link: 
       - title: Aliyun
         icon: /assets/providers/aliyun.svg
         details: <strong>ECS</strong> Elastic Compute Service<br><strong>SAS</strong> Simple Application Server
-        link: 
+      - title: Rainyun
+        icon: cloud-showers
+        details: <strong>RCS</strong> Cloud Server
 ---

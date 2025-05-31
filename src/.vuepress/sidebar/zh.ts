@@ -16,7 +16,8 @@ export const zhSidebar = sidebar({
           prefix: "server/",
           children: [
             "aliyunswas",
-            "qcloudlh"
+            "qcloudlh",
+            "rainyunrcs",
           ]
         }
       ]

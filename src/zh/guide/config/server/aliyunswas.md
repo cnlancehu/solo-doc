@@ -5,85 +5,67 @@ icon: a
 
 配置阿里云轻量应用服务器。
 
-## 申请访问密钥
-首先，你需要在 [阿里云控制台](https://ram.console.aliyun.com/profile/access-keys) 申请一个访问密钥。
-
-点击 **创建 AccessKey**，得到以下密钥。
+## 申请 AccessKey
+1. 访问 [阿里云控制台 RAM 访问密钥页面](https://ram.console.aliyun.com/profile/access-keys)。
+2. 点击 **创建 AccessKey**。
+3. 记录生成的 **AccessKey ID** 和 **AccessKey Secret**。
 
 ![AccessKey](/assets/guide/config/server/aliyun-accesskey.webp)
 
-记下其中的 **AccessKey ID** 和 **AccessKey Secret**，稍后需要用到。
+## 获取实例 ID 和地域 ID
+1. 进入 [轻量应用服务器控制台](https://swasnext.console.aliyun.com/servers)。
+2. 点击目标服务器卡片标题，进入详情页。
+3. 在 **基本信息** 区域找到 **实例 ID**。
 
-## 获取实例 ID 、地域 ID
-在 [轻量应用服务器控制台](https://swasnext.console.aliyun.com/servers) 中，点击服务器卡片的标题，进入服务器详情页。
+![实例 ID](/assets/guide/config/server/aliyun-instanceid.webp)
 
-在服务器概览中，你能在 **基本信息** 中找到服务器的 **实例 ID**。
+4. 查看浏览器地址栏中的服务器概览页面 URL，从中获取 **地域 ID**（例如 `cn-hongkong`）。
 
-![基本信息](/assets/guide/config/server/aliyun-instanceid.webp)
-
-在服务器概览页面的网址中，你能找到服务器的**地域 ID**，如 `cn-hongkong`。
 ![地域 ID](/assets/guide/config/server/aliyun-regionid.webp)
 
 ## 配置防火墙规则
-在服务器详情页的菜单中，点击 **防火墙**。
+1. 在服务器详情页，点击菜单中的 **防火墙**。
+2. 为需要由 Solo 自动管理的端口规则设置 **备注名称**（用于标识规则）。
+3. 记录所有需要 Solo 管理的规则的备注名称。
 
-对于需要被 Solo 修改的防火墙规则，他们需要具备一个特定的备注，如下图中的 `ssh`，`mysql`。
-
-稍后，你需要将这些备注名称添加到 Solo 的配置中，Solo 会根据备注名称来识别和修改相应的防火墙规则。
-
-::: tip 多条规则可以拥有相同的备注名称
-如果你有多条规则需要被 Solo 修改，可以为它们设置相同的备注名称。
-
-Solo 会自动识别并修改所有匹配的规则。
-:::
+例如，下图需要保护 `22` (SSH) 和 `3306` (MySQL) 端口，则后续配置应填写 `ssh` 和 `mysql`。
 
 ![防火墙规则](/assets/guide/config/server/aliyun-firewallrules.webp)
 
+::: tip 备注名称可重复
+多条规则可使用相同备注名称。Solo 会自动识别并修改所有匹配该名称的规则。
+:::
+
 ## 编辑配置文件
-在 Solo 的配置文件中，添加以下内容：
+在 Solo 配置文件中添加以下内容：
 
 ```toml
 [[servers]]
 name = "服务器名称"
-machine_type = "aliyunswas"
-machine_id = "实例 ID"
-region = "地域 ID"
-secret_id = "AccessKey ID"
-secret_key = "AccessKey Secret"
-protocol = "v4"
+machine_type = "aliyunswas"     # 阿里云轻量固定此值
+machine_id = "实例 ID"          # 从服务器详情页获取
+region = "地域 ID"              # 从服务器 URL 获取
+secret_id = "AccessKey ID"      # 申请的 AccessKey ID
+secret_key = "AccessKey Secret" # 申请的 AccessKey Secret
+protocol = "v4"                 # 防火墙仅支持 IPv4
 rules = [
-    "第一条规则的备注内容",
-    "第二条规则的备注内容",
+    "规则备注1", # 如 ssh
+    "规则备注2", # 如 mysql
 ]
 ```
 
-### `name`
-服务器名称，任意字符串。
-
-### `machine_type`
-服务器类型，对于阿里云轻量，应填写 `aliyunswas`。
-
-### `machine_id`
-服务器实例 ID，填写 [上文](#获取实例-id-、地域-id) 中的 **实例 ID**。
-
-### `region`
-服务器地域 ID，填写 [上文](#获取实例-id-、地域-id) 中的 **地域 ID**。
-
-### `secret_id`
-阿里云访问密钥的 **AccessKey ID**，填写 [上文](#申请访问密钥) 中的 **AccessKey ID**。
-
-### `secret_key`
-阿里云访问密钥的 **AccessKey Secret**，填写 [上文](#申请访问密钥) 中的 **AccessKey Secret**。
-
-### `protocol`
-防火墙 CIDR 协议版本，对于防火墙仅支持 IPv4 的阿里云轻量，请填写 `v4`。
-
-### `rules`
-防火墙规则备注列表，填写 [上文](#配置防火墙规则) 中的需要被 Solo 修改的防火墙规则备注名称。
+### 参数说明
+* `name`: 自定义服务器名称（任意字符串）。
+* `machine_type`: 服务器类型，固定为 `aliyunswas`。
+* `machine_id`: 服务器 **实例 ID**。
+* `region`: 服务器 **地域 ID**。
+* `secret_id`: 申请的 **AccessKey ID**。
+* `secret_key`: 申请的 **AccessKey Secret**。
+* `protocol`: 防火墙协议版本，固定为 `v4` (IPv4)。
+* `rules`: 需要管理的防火墙规则 **备注名称列表**。
 
 ## 完整配置文件示例
-
-以下是一个根据上文提供的示例信息填写的完整配置文件示例
+根据上述示例信息配置如下：
 
 ```toml
 [[servers]]

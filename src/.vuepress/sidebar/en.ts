@@ -16,7 +16,8 @@ export const enSidebar = sidebar({
           prefix: "server/",
           children: [
             "aliyunswas",
-            "qcloudlh"
+            "qcloudlh",
+            "rainyunrcs",
           ]
         }
       ]
