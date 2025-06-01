@@ -13,7 +13,7 @@ export default hopeTheme({
 
   copyright: false,
 
-  logo: "https://theme-hope-assets.vuejs.press/logo.svg",
+  logo: "/assets/logo.svg",
 
   repo: "cnlancehu/solo",
 

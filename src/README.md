@@ -2,7 +2,7 @@
 home: true
 icon: house
 title: Hub
-heroImage: https://theme-hope-assets.vuejs.press/logo.svg
+heroImage: /assets/logo.svg
 heroText: Solo
 tagline: A lightweight tool to protect / hide server ports
 

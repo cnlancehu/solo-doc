@@ -2,7 +2,7 @@
 home: true
 icon: house
 title: 主页
-heroImage: https://theme-hope-assets.vuejs.press/logo.svg
+heroImage: /assets/logo.svg
 heroText: Solo
 tagline: 一个保护 / 隐藏服务器端口的轻量级工具
 
