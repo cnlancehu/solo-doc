@@ -7,7 +7,15 @@ next: ./get-started.md
 
 Solo, a lightweight port protection tool.
 
-With Solo, you can make important ports open only to you, thus achieving the effect of hiding ports.
+Solo should run on the device that needs to access the server ports (such as your personal computer). It automatically executes the following workflow:
+
+1. Obtain the current public IP address
+
+2. Check the cloud firewall rules status
+
+3. Update the firewall rules' Cidr Block to your IP
+
+This ensures that only your device can access the specified ports.
 
 ### Principle
 
@@ -20,7 +28,7 @@ Solo only supports the firewall feature of cloud service providers, **not the fi
 ::: info What is **Cidr**?
 CIDR (Classless Inter-Domain Routing) is a method of representing IP ranges, commonly used in cloud server firewall rules.
 
-For example, the format `1.1.1.1` means the firewall rule **only applies to this specific IP**.
+For example, the format `1.1.1.1` means the firewall rule **only applies to the specific IP `1.1.1.1`**.
 :::
 
 So, if you dynamically update the **Cidr Block** of the firewall rule for a critical port to your own IP address,
@@ -45,19 +53,6 @@ However, manually changing firewall rules each time is too much trouble.
 What we need is a tool that automates the process of modifying the Cidr Block.
 
 That’s how Solo came to be.
-
-### How It Works
-
-Solo's port protection process mainly includes the following steps:
-
-1. **Retrieve Firewall Rules**  
-   Use the cloud provider’s API to fetch the current list of firewall rules for your server.
-
-2. **Filter and Detect**  
-   Determine which rules should be managed by Solo based on their comments, and detect if the local IP has changed.
-
-3. **Automatically Update Rules**  
-   If an IP change is detected, Solo automatically uses the cloud provider's API to update the Cidr Block of the relevant rules in real time.
 
 ```component VPBanner
 title: <i class="fa-regular fa-star-shooting"></i> Next<br>Start Using Solo

@@ -12,13 +12,13 @@ next: ./edit.md
 
 @tab Windows
 
-```bash
+```bash :no-line-numbers
 solo conf new
 ```
 
 @tab Unix
 
-```bash
+```bash :no-line-numbers
 ./solo conf new
 ```
 :::

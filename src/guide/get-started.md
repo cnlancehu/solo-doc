@@ -49,13 +49,13 @@ Run Solo for the first time:
 
 @tab Windows
 
-```bash
+```bash :no-line-numbers
 solo
 ```
 
 @tab Unix
 
-```bash
+```bash :no-line-numbers
 chmod 755 solo # Grant execute permission to Solo
 ./solo
 ```

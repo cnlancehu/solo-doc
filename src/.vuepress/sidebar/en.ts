@@ -19,8 +19,9 @@ export const enSidebar = sidebar({
             "qcloudlh",
             "rainyunrcs",
           ]
-        }
+        },
+        "run",
       ]
-    }
+    },
   ]
 });

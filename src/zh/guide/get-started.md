@@ -49,13 +49,13 @@ Solo 支持安卓设备，但是也仅处于最基本的支持
 
 @tab Windows
 
-```bash
+```bash :no-line-numbers
 solo
 ```
 
 @tab Unix
 
-```bash
+```bash :no-line-numbers
 chmod 755 solo # 赋予 Solo 执行权限
 ./solo
 ```
