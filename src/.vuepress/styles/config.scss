@@ -1,2 +1,5 @@
 // you can change config here
-$theme-color: #646cff;
+$theme-color: (
+    light: #646cff,
+    dark: #8462ff
+);
