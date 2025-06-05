@@ -17,6 +17,7 @@ Currently, Solo supports:
 | :-----------: | :------------------------------------------------: |
 | Tencent Cloud |         Cloud Virtual Machine, Lighthouse          |
 |    Aliyun     | Elastic Compute Service, Simple Application Server |
+|    Rainyun    |                    Cloud Server                    |
 
 ::: important
 Solo is still in early development and currently supports only a limited number of products.
