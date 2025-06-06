@@ -26,6 +26,6 @@ highlights:
         icon: /assets/providers/aliyun.svg
         details: <strong>ECS</strong> Elastic Compute Service<br><strong>SAS</strong> Simple Application Server
       - title: Rainyun
-        icon: cloud-showers
+        icon: /assets/providers/rainyun.png
         details: <strong>RCS</strong> Cloud Server
 ---

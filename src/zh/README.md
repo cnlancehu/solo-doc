@@ -27,6 +27,6 @@ highlights:
         icon: /assets/providers/aliyun.svg
         details: <strong>ECS</strong> 云服务器<br><strong>SAS</strong> 轻量应用服务器
       - title: 雨云
-        icon: cloud-showers
+        icon: /assets/providers/rainyun.png
         details: <strong>RCS</strong> 云服务器
 ---

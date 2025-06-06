@@ -20,7 +20,7 @@ export default defineUserConfig({
 
   plugins: [
     meilisearchIndexerPlugin({
-      indexContent: true,
+      indexContent: false,
       baseUrl: '',
       deploy: {
         trigger: "meilideploy = true",
