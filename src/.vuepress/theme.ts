@@ -18,6 +18,7 @@ export default hopeTheme({
   repo: "cnlancehu/solo",
 
   docsDir: "src",
+  docsRepo: "cnlancehu/solo-doc",
 
   pageInfo: ["Author", "ReadingTime", "Category", "Tag"],
 

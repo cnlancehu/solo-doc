@@ -130,7 +130,7 @@ export default {
 .title {
     font-size: 3rem;
     margin-bottom: 0.5rem;
-    color: var(--vp-c-accent);
+    color: var(--vp-c-accent-hover);
     font-weight: 700;
     text-shadow: 0 2px 8px var(--vp-c-shadow);
     animation: titleGlow 3s ease-in-out infinite alternate;
@@ -168,20 +168,6 @@ html[data-theme="dark"] .title {
     box-shadow: 0 8px 24px var(--vp-c-shadow);
 }
 
-.stat-number {
-    font-size: 2.5rem;
-    font-weight: bold;
-    color: var(--vp-c-accent);
-    margin-bottom: 0.5rem;
-}
-
-.stat-label {
-    color: var(--vp-c-text-mute);
-    font-size: 0.9rem;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-}
-
 .platform-groups {
     display: flex;
     flex-direction: column;
@@ -204,7 +190,7 @@ html[data-theme="dark"] .title {
 .platform-icon {
     font-size: 2rem;
     margin-right: 1rem;
-    color: var(--vp-c-accent);
+    color: var(--vp-c-accent-hover);
 }
 
 html[data-theme="dark"] .platform-icon {
@@ -277,7 +263,7 @@ html[data-theme="dark"] .download-item:hover {
 }
 
 .arch-badge {
-    background: var(--vp-c-accent);
+    background: var(--vp-c-accent-hover);
     color: var(--vp-c-accent-text);
     padding: 0.25rem 0.75rem;
     border-radius: 0.5rem;
