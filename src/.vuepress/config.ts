@@ -1,5 +1,4 @@
 import { defineUserConfig } from "vuepress";
-import meilisearchIndexerPlugin from "vuepress-plugin-meilisearch-indexer";
 import theme from "./theme.js";
 
 export default defineUserConfig({
@@ -17,20 +16,6 @@ export default defineUserConfig({
       description: "A lightweight tool to protect / hide server ports",
     },
   },
-
-  plugins: [
-    meilisearchIndexerPlugin({
-      indexContent: false,
-      baseUrl: '',
-      deploy: {
-        trigger: "meilideploy = true",
-
-        host: "https://search.lance.fun/",
-        index_uid: "solo-doc",
-        type: "full",
-      }
-    }),
-  ],
 
   theme,
 });
