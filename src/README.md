@@ -2,9 +2,7 @@
 home: true
 icon: house
 title: Hub
-heroImage: /assets/logo.svg
-heroText: Solo
-tagline: A lightweight tool to protect / hide server ports
+tagline: A lightweight tool to hide server ports
 
 actions:
   - text: Guide

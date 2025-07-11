@@ -13,8 +13,6 @@ export default hopeTheme({
 
   copyright: false,
 
-  logo: "/assets/logo.svg",
-
   repo: "cnlancehu/solo",
 
   docsDir: "src",
