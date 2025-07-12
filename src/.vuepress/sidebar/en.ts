@@ -15,6 +15,7 @@ export const enSidebar = sidebar({
           icon: "server",
           prefix: "server/",
           children: [
+            "aliyunecs",
             "aliyunswas",
             "qcloudlh",
             "rainyunrcs",

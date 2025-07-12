@@ -19,13 +19,15 @@ Configure Aliyun Simple Web Application Server (SWAS).
 
 ![Instance ID](/assets/guide/config/server/aliyun/instanceid.webp)
 
-4. Check the browser address bar URL to obtain **Region ID** (e.g. `cn-hongkong`).
+4. At the same time, check the browser address bar URL to obtain **Region ID** (e.g. `cn-hongkong`).
 
-![Region ID](/assets/guide/config/server/aliyun/regionid.webp)
+For example, for the following URL, the Region ID is `cn-hongkong`:
+
+`https://swasnext.console.aliyun.com/servers/cn-hongkong/314548fe211%20f4293aafc10c34e140026/dashboard`
 
 ## Configure Firewall Rules
 1. In server details page, select **Firewall** from the menu.
-2. Set **Remark Name** for rules requiring Solo management.
+2. Set **dedicated remark names** for port rules that need to be automatically managed by Solo (for rule identification).
 3. Record all remark names for rules to be managed.
 
 For example, to protect ports `22` (SSH) and `3306` (MySQL), configure `ssh` and `mysql`:
@@ -42,12 +44,12 @@ Add this configuration to Solo's TOML file:
 ```toml
 [[servers]]
 name = "Server Name"
-machine_type = "aliyunswas"     # Fixed for Aliyun SWAS
-machine_id = "Instance ID"      # From server details
-region = "Region ID"            # From URL
-secret_id = "AccessKey ID"      # Your AccessKey ID
-secret_key = "AccessKey Secret" # Your AccessKey Secret
-protocol = "v4"                 # IPv4 only
+machine_type = "aliyunswas"
+machine_id = "Instance ID"
+region = "Region ID"
+secret_id = "AccessKey ID"
+secret_key = "AccessKey Secret"
+protocol = "v4"
 rules = [
     "rule_remark1", # e.g. ssh
     "rule_remark2", # e.g. mysql
@@ -61,7 +63,7 @@ rules = [
 * `region`: Server **Region ID**
 * `secret_id`: Your **AccessKey ID**
 * `secret_key`: Your **AccessKey Secret**
-* `protocol`: Always `v4` (IPv4)
+* `protocol`: Firewall protocol version, fixed as `v4` (SWAS firewall only supports IPv4)
 * `rules`: List of firewall **remark names**
 
 ## Configuration Example

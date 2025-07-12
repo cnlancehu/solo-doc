@@ -19,13 +19,15 @@ icon: a
 
 ![实例 ID](/assets/guide/config/server/aliyun/instanceid.webp)
 
-4. 查看浏览器地址栏中的服务器概览页面 URL，从中获取 **地域 ID**（例如 `cn-hongkong`）。
+4. 与此同时，查看浏览器地址栏中的服务器概览页面 URL，从中获取 **地域 ID**（例如 `cn-hongkong`）。
 
-![地域 ID](/assets/guide/config/server/aliyun/regionid.webp)
+举个例子，对于以下 URL，Region ID 为 `cn-hongkong`：
+
+`https://swasnext.console.aliyun.com/servers/cn-hongkong/314548fe211%20f4293aafc10c34e140026/dashboard`
 
 ## 配置防火墙规则
 1. 在服务器详情页，点击菜单中的 **防火墙**。
-2. 为需要由 Solo 自动管理的端口规则设置 **备注名称**（用于标识规则）。
+2. 为需要由 Solo 自动管理的端口规则设置 **专门的备注名称**（用于标识规则）。
 3. 记录所有需要 Solo 管理的规则的备注名称。
 
 例如，下图需要保护 `22` (SSH) 和 `3306` (MySQL) 端口，则后续配置应填写 `ssh` 和 `mysql`。
@@ -42,12 +44,12 @@ icon: a
 ```toml
 [[servers]]
 name = "服务器名称"
-machine_type = "aliyunswas"     # 阿里云轻量固定此值
-machine_id = "实例 ID"          # 从服务器详情页获取
-region = "地域 ID"              # 从服务器 URL 获取
-secret_id = "AccessKey ID"      # 申请的 AccessKey ID
-secret_key = "AccessKey Secret" # 申请的 AccessKey Secret
-protocol = "v4"                 # 防火墙仅支持 IPv4
+machine_type = "aliyunswas"
+machine_id = "实例 ID"
+region = "地域 ID"
+secret_id = "AccessKey ID"
+secret_key = "AccessKey Secret"
+protocol = "v4"
 rules = [
     "规则备注1", # 如 ssh
     "规则备注2", # 如 mysql
@@ -61,7 +63,7 @@ rules = [
 * `region`: 服务器 **地域 ID**。
 * `secret_id`: 申请的 **AccessKey ID**。
 * `secret_key`: 申请的 **AccessKey Secret**。
-* `protocol`: 防火墙协议版本，固定为 `v4` (IPv4)。
+* `protocol`: 防火墙协议版本，固定为 `v4` (轻量服务器防火墙仅支持 IPv4)。
 * `rules`: 需要管理的防火墙规则 **备注名称列表**。
 
 ## 完整配置文件示例
