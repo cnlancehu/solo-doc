@@ -5,7 +5,6 @@
                 <h1 class="title">
                     Solo {{ list.version }}
                 </h1>
-                <p class="publish-time">{{ i18n.published }} {{ list.update_time }}</p>
             </div>
 
             <div class="platform-groups">
@@ -23,7 +22,6 @@
                                     <span class="arch-badge">{{ artifact.arch }}</span>
                                 </div>
                                 <div class="file-details">
-                                    <div class="file-name">{{ artifact.name }}</div>
                                     <div class="file-size">{{ artifact.size }}</div>
                                 </div>
                             </div>
@@ -63,14 +61,12 @@ export default {
                 download: "下载",
                 loading: "加载中...",
                 error: "加载数据失败，请稍后再试。",
-                published: "发布于",
                 platforms: "平台",
             },
             en: {
                 download: "Download",
                 loading: "Loading...",
                 error: "Error loading data. Please try again later.",
-                published: "Published at",
                 platforms: "Platforms",
             }
         };
@@ -139,12 +135,6 @@ export default {
 html[data-theme="dark"] .title {
     color: #ffffff;
     text-shadow: 0 2px 8px rgba(255, 255, 255, 0.1);
-}
-
-.publish-time {
-    color: var(--vp-c-text-mute);
-    font-size: 1.1rem;
-    margin: 0;
 }
 
 .stats-section {
@@ -475,10 +465,6 @@ html[data-theme="dark"] .title {
 
     .title {
         font-size: 2rem;
-    }
-
-    .publish-time {
-        font-size: 1rem;
     }
 
     .header-section {
