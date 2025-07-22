@@ -2,7 +2,7 @@
 home: true
 icon: house
 title: Hub
-tagline: A lightweight tool to hide server ports
+tagline: A cloud server port hiding tool
 
 actions:
   - text: Guide

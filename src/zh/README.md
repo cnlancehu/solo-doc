@@ -2,7 +2,7 @@
 home: true
 icon: house
 title: 主页
-tagline: 一个隐藏服务器端口的轻量级工具
+tagline: 一个云服务器端口隐藏工具
 
 actions:
   - text: 使用指南
@@ -16,7 +16,6 @@ actions:
 
 highlights:
   - header: 支持多个云服务商
-    description: 支持腾讯云、阿里云等云服务商的端口保护
     features:
       - title: 腾讯云
         icon: /assets/providers/qcloud.svg
